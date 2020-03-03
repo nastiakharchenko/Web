@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">		
+        <title>Task 6</title>
+        <style> 
+        body { background: url(treug.jpg) ; background-size: cover; } 
+        #triangle-up_task6 {
+           width: 0;
+           height: 0;
+           border-left: 50px solid transparent;
+           border-right: 50px solid transparent;
+            
+           animation: border-bottom 1s infinite ease-in-out;
+           }
+           @keyframes border-bottom {
+               from { border-bottom: 100px solid red; }
+
+                to { border-bottom: 100px solid rgb(248, 2, 138); }
+                }
+
+            .turn:hover {
+              transform: scale(2, 0.5);
+              transition-timing-function: ease-in;
+              transition-duration: 1s;
+              bottom: 500px;
+              right: 500px;
+                 }
+            .layer2 {
+            bottom: 15px; 
+            right: 15px; 
+            line-height: 1px;
+            animation: position 1s infinite ease-in-out;
+            }
+            @keyframes position {
+                from { position: relative; }
+
+                to { position: absolute; }
+                }
+        </style>
+    </head>
+    
+    <body>
+        <a href="../index_lab_4.html"> <mark><b><- Головна сторінка</b></mark></a><br><br><br><br>
+        <div class="layer2">
+        <div id="triangle-up_task6" class="turn" ) ></div>
+        </div>
+    </body>

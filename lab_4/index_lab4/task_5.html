@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">		
+        <title>Task 5</title>
+        <style>
+            body { background: url(kvadr.jpg) ; background-size: cover; }
+
+            #rectangle {
+            width: 200px;
+            height: 200px;
+            background-position: 0 0;
+            border: 10px solid white;
+            animation: background 3s infinite ease-in-out;
+            }
+            @keyframes background {
+                from {
+                    background: linear-gradient(rgb(243, 227, 7), rgb(35, 13, 224), rgb(214, 31, 47), rgb(33, 11, 230), rgb(224, 240, 9));}
+
+                to { background: linear-gradient(crimson, gold, yellowgreen, teal, crimson); }
+                }
+        </style>
+
+    </head>
+    
+    <header>
+        <a href="../index_lab_4.html"> <mark><b><- Головна сторінка</b></mark></a><br><br><br><br>
+        <div id="rectangle" class=" background"></div>
+    </header>
