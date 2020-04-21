@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+* {
+ margin: 0; /*Отступ от каждого края*/
+ padding: 0; /*Значение полей вокруг содержимого*/
+}
+ 
+/*---------Задать стиль для тела---------*/
+body {
+ height: 5100px;
+ width: 2000px
+ font-family: "Roboto", sans-serif; /*Шрифты*/
+ font-size:0.94em; /*Размер шрифта*/
+ line-height:135%;/*Муждустрочный интервал*/
+}
+ 
+aside, nav, footer, header, section { display: block; }
+ 
+ul {
+ list-style:none;/*маркеры*/
+}
+ 
+a {
+ text-decoration:none;/*оформление текста в ссылке*/
+}
+ 
+a:hover {
+ text-decoration: none; /*стиль ненажатой кнопки*/
+}
+
+
+/*---------Главные блоки---------*/
+ 
+#wrapper {
+ margin-top:40px;
+ width: 1200px;
+ margin: 0 auto;
+ height: auto !important;
+ }
+ 
+.header{
+ width:2000px;
+ background: url(../image/header_fon.png);
+ height:65px;
+ z-index: 4;
+ }
+ 
+#headerInner {
+ position:relative;
+ border:0px solid #333;
+ width:1200px;
+ height:250px;
+ margin:0 auto;
+ margin-top:0px;
+ }
+
+/*---------содержимое---------*/
+
+#content {
+ margin-top:40px;
+}
+
+#content1{
+	background: url(../image/Fon.png) no-repeat;
+	width:2000px;
+ 	height:6100px;
+}
+
+#content1 #img1{
+  margin-top: 470px;
+  margin-left: 880px;
+  margin-right: auto;
+}
+
+#content1 #img2{
+  margin-top: 700px;
+  margin-left: 780px;
+  margin-right: auto;
+}
+
+#content1 #img3{
+  margin-top: 880px;
+  margin-left: 880px;
+  margin-right: auto;
+}
+
+#content1 #img4{
+  margin-top: 1150px;
+  margin-left: 880px;
+  margin-right: auto;
+}
+
+#content1 #video{
+  width:720px;
+  height:530px;
+  margin-top: 70px;
+  margin-left: 640px;
+  margin-right: auto;
+}
+
+/*---------Верхнее правое меню---------*/
+ 
+.topMenuRight {
+ height:57px;
+ position:absolute;
+ left:30%;
+ top:0px;
+ border: 0px solid #fff;
+ }
+
+/*стиль меню*/
+.topMenuRight ul li {
+ background: #fff 0px 0px no-repeat;
+ float:left;
+ height: 57px;
+ }
+
+/*стиль для home*/
+.topMenuRightHome{
+ border: 2px solid rgb(180,180,180);
+ background-color: #fff;
+ width: 46px;
+ height: 16px;
+ border-radius: 27px;
+}
+
+.topMenuRight ul {
+ padding-left:0px;
+ }
+ 
+/*стиль надписи при наведении*/
+.topMenuRight ul li a{
+ margin-top:0px;
+ font-weight: 400;
+ border-right:0px solid #adadad;
+ display:block;
+ color: #5d6981;
+ text-decoration:none;
+ line-height: 24px;
+ font-size: 20px;
+ padding:16px 20px 21px 20px;
+ font-family: Roboto;
+ }
+ 
+/*фон наведения ненажатой кнопки*/
+.topMenuRight ul li a:hover{
+ background: #fff;
+ color:rgb(180,180,180);
+ }
+
+/*---------Иконки соц.сетей---------*/
+
+.share-new {
+ z-index: 1;
+ position:absolute;
+ right:0px;
+ top:1px;
+ }
+ 
+.share-new a { display:inline-block; width: 46px; height: 46px; margin: 2px 0px 2px 0; }
+ 
+.share-new .icon-facebook {
+ background: url(../image/facebook.png) 0 center no-repeat;
+ padding:4px 0px 0px 5px;
+ font-size:17px;
+ margin-right: 3px;
+}
+
+ .share-new .icon-twitter {
+ background: url(../image/twitter.png) 0 center no-repeat;
+ padding:4px 0px 0px 5px;
+ font-size:17px;
+ margin-right: 0px;
+}
+ 
+ /*---------Логотип---------*/
+ 
+.logo {
+ position:absolute;
+ left:0px;
+ top:20px;
+ }
+
+/*---------Всплывающее окно---------*/
+
+#okno {
+  width: 2000px;
+  height: 6100px;
+  position: absolute;
+  display: none;
+}
+
+  .mySlides {
+    display: none;
+	margin-top: 100px;
+  }
+
+/*---------Стрелки переходов---------*/
+
+/* Следующие и предыдущие кнопки */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 50px;
+    margin-top: 100px;
+	margin-left: 300px;
+	margin-right: 0 px;
+    color: rgba(82,75,75,1.00);
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 10px 10px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Расположение «следующей кнопки» справа */
+  .next { 
+    right: 0;
+  }
