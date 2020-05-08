@@ -1,6 +1,3 @@
-//import { Observable, interval } from 'rxjs';
-//import { map, tap } from 'rxjs/operators';
-
 const { from, interval, merge } = rxjs;
 const { filter, map, flatMap, switchMap, share, tap } = rxjs.operators;
 
@@ -31,15 +28,6 @@ fetch(DATA_URL)
         const table = document.createElement('table');
         const thead = document.createElement('thead');
         const tbody = document.createElement('tbody');
-       // const caption = document.createElement('caption');
-       // const span = document.createElement('span');
-       // span.id = 'nextUpdate'
-
-       // caption.innerHTML = 'Last update a ';
-        //caption.append(span);
-        //caption.innerHTML += ' seconds ago';
-        //table.append(caption);
-
         const tr = document.createElement('tr');
         tr.id = 'tableHead';
         
