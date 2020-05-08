@@ -1,0 +1,24 @@
+table {
+    width: 500px; /* Ширина таблицы */
+    border: 2px solid black; /* Рамка вокруг таблицы */
+    background: #509ce9; /* Цвет фона */
+    color: white; /* Цвет текста */
+    margin-left: auto; /* Отступ слева */
+    margin-right: auto;
+   }
+td {
+    text-align: center; /* Выравнивание по центру */
+    padding: 3px; /* Поля вокруг текста */
+   }
+th {
+    color: white; /* Цвет текста */
+    border-bottom: 4px double black; /* Двойная линия снизу */
+   }
+th { /* Стиль для первой колонки */
+    background-color: #ffff0b;
+    color: #0f0f01; /* Цвет текста */
+   }
+h2 {
+    text-align: center; /* Выравнивание по центру */
+    color: #6033c9; /* Цвет текста */
+   }
