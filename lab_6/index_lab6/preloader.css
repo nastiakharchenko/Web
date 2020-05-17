@@ -1,4 +1,4 @@
-.preloader {
+my-preloader {
     /*фиксированное позиционирование*/
     position: fixed;
     /* координаты положения */
@@ -12,7 +12,7 @@
     z-index: 1001;
   }
   
-  .preloader__row {
+ .preloader__row {
     position: relative;
     top: 50%;
     left: 50%;
@@ -59,11 +59,11 @@
     }
   }
   
-  .loaded_hiding .preloader {
+  .loaded_hiding my-preloader {
     transition: 3.0s opacity;
     opacity: 0;
   }
   
-  .loaded .preloader {
+  .loaded my-preloader {
     display: none;
   }

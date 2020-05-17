@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-gallery-slideshow@1.4.2/dist/js/vue-gallery-slideshow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script src="js/preloader.js"></script>
+  </head>
+  <body>
+    
+    <my-preloader>
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </my-preloader>
+
+    <div id="app">   
+      <h2 style="text-align:center; color: white">Трішки рожевого ;)</h2>
+      <h4 style="text-align:center; color: rgb(255, 255, 255)">Вибери картинку, з якої почнемо</h4>
+      <h3 style="color: white">Введіть URL картинки</h3>   
+      <input type="text" ref = "pathFile"  name="pathFile" id="pathFile"/>
+      <button v-on:click="remove(pathFile)">Удалить</button>
+      <button v-on:click="add($event,pathFile)">Добавить</button>
+      <br>
+    <img class="image" v-for="(image, i) in images" :src="image" @click="index = i">
+    <vue-gallery-slideshow :images="images" :index="index"  @close="index = null"></vue-gallery-slideshow>
+    </div>
+    <script src="js/vue.js"></script>
+  </body>
+</html>

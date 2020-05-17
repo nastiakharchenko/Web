@@ -1,0 +1,15 @@
+body {
+  background-color: hotpink;
+    font-family: sans-serif;
+  }
+
+  .image {
+    width: 32%;
+    height: 32%;
+    background-size: cover;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    object-fit: contain;
+  }
