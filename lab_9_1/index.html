@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-gallery-slideshow@1.4.2/dist/js/vue-gallery-slideshow.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Select an image</h2>
+      
+      <div>
+        <input type="file" @change="onFileChange">
+      </div>
+
+      <div v-if="images.length" v-for="(image, i) in images" :key="i" class="gallery-item">
+          <img class="image" :src="image" @click="index = i">
+          <button @click="removeImage(i)">Remove</button>
+      </div>
+      <div v-if="!images.length">
+        <h2>Placeholder</h2>
+      </div>
+    <vue-gallery-slideshow :images="images" :index="index" @close="index = null"></vue-gallery-slideshow>
+    </div>
+    <script src="js/vue.js"></script>
+
+  </body>
+</html>
